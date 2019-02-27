@@ -1,0 +1,405 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+  background: #f3f3f3;
+}
+a{
+  outline: none;
+}
+.firstHeader{
+  font-size: small;
+  font-family: sans-serif;
+  padding: 10px;
+  text-align: center;
+  height: 20px;
+  background: #1ab195;
+}
+.firstHeader a{
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: -1;
+  float: right;
+  margin-right: 70px;
+}
+.firstHeader p{
+  float: right;
+  margin-right: 30px;
+  color: #fff;
+  letter-spacing: 1;
+}
+.secondHeader{
+  font-size: medium;
+  font-family: Verdana, sans-serif;
+  height: 28px;
+  background: #212e3b;
+  color: #fff;
+  padding: 10px 20px 30px 20px;
+  }
+.secondHeader img{
+  float: left;
+  margin-top: 2px;
+  margin-left: 35px;
+}
+.secondHeader p{
+  letter-spacing: 2px;
+  font-family: Arial;
+  font-size: 30px;
+  float: left;
+  margin-top: 4px;
+  margin-left: 25px;
+}
+main{
+  padding: 20px 50px;
+  height: 350px
+}
+aside{
+  float: left;
+  width: 225px;
+  height: max-content;
+  margin-right: 30px;
+  margin-bottom: 101px;
+  padding: 0 0 0 50px;
+}
+.topnav{
+  border-radius: 10px 10px 0 0;
+  border: 1px solid #dddddd;
+  margin-bottom: 20px;
+}
+
+.account p{
+  border-radius: 5px 5px 0 0;
+  text-transform: capitalize;
+  text-align: left;
+  padding: 10px;
+  font-size: small;
+  background: #212e3b;
+  color: #fff;
+}
+.tall p{
+  padding: 15px;
+  font-size: 16px;
+}
+.topnav ul{
+  list-style: none;
+}
+.topnav li{
+  padding: 0;
+  margin: 0;
+}
+.topnav li .active{
+  background: #f3f3f3;
+}
+.topnav a{
+  border-bottom: 1px solid #ddd;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: gray;
+  font-size: small;
+  font-family: Arial;
+  display: block;
+  background: #fff;
+  padding: 10px;
+}
+.topnav a:hover{
+  background: #f3f3f3;
+}
+.roomrates{
+  background: #f3f3f3;
+  border: 1px solid #ddd;
+  border-radius: 10px 10px 0 0;
+}
+.roomrates .rates{
+  margin-top: 20px;
+  padding-left: 35px;
+  padding-bottom: 20px;
+  font-size: small;
+}
+.rates li{
+  margin-bottom: 10px;
+  font-family: Arial;
+}
+.rates li p{
+  color: #707070;
+}
+li strong{
+  text-transform: capitalize;
+  color: #212e3bea;
+}
+.maincontent{
+  float: left;
+  border: 1px solid black;
+  width: 900px;
+  min-height: 290px;
+  max-height: 410px;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid #dddddd;
+  background: #fff;
+  padding-bottom: 15px;
+}
+.contain_form{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main_content .userinfo fieldset{
+  width: 48%;
+  background: #fff;
+}
+
+.main_content .userinfo fieldset input[type="email"],
+.main_content .userinfo fieldset input[type="tel"],
+.main_content .userinfo fieldset input[type="date"]{
+  width: 90%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.main_content .userinfo fieldset label[for="roomtype"],
+.main_content .userinfo fieldset select{
+  margin-top: 2.5%;
+  margin-bottom: 6.5%;
+}
+
+.main_content .userinfo p.paragragh{
+  width: auto;
+}
+
+.userinfo{
+  padding-left: 25px;
+  margin: 0;
+  /* width: 430px; */
+  font-size: 16px;
+  height: auto;
+  font-family: Arial;
+  /* border: 1px solid black; */
+}
+.userinfo fieldset{
+  margin-top: 20px;
+  border-radius: 15px 15px 0 0;
+  border: 1px solid #ddd;
+  /* border: 0; */
+  width: 400px;
+  text-transform: capitalize;
+  float: left;
+}
+.userinfo .rightfield{
+  margin-left: 20px;
+}
+.userinfo .paragragh{
+  border-radius: 10px 10px 0 0;
+  background: #ddedd7;
+  width: 400px;
+  padding: 10px 0 10px 10px;
+  /* margin-top: 20px; */
+  margin-bottom: 10px;
+}
+span p{
+  color:#f06537;
+  margin-top:26px;
+  padding-left: 35px;
+  float: left;
+  font-size: 15px;
+}
+.userinfo label{
+  margin-left: 20px;
+  font-weight: bold;
+}
+.userinfo select{
+  width: 350px;
+  height: 30px;
+  box-sizing: border-box;
+  margin: 5px 0 10px 20px;
+  text-align: center;
+}
+.userinfo input{
+  width: 350px;
+  height: 30px;
+  box-sizing: border-box;
+  margin: 5px 0 10px 20px;
+}
+.userinfo input[type="tel"]{
+  margin-bottom: 25px;
+}
+.userinfo input[type="submit"]{
+  background: #0024d0;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 28px;
+  width: 80px;
+  float: right;
+  margin-right: 40px;
+}
+footer{
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 11px;
+  clear: both;
+  background-color: #232323;
+  text-align: center;
+  padding: 10px;
+  height: inherit;
+  margin-top: 6.5em;
+}
+footer p{
+  margin-bottom: 5px;
+  letter-spacing: 2;
+  line-height: 15px;
+}
+.maincontent .table{
+  margin-top: 20px;
+  margin-left: 25px;
+  clear: both;
+}
+.maincontent .table .bedlink{
+  width: 20%;
+  text-align: center;
+}
+.maincontent .table li{
+  width: 11.5%;
+  font-size: 14px;
+  float: left;
+  list-style: none;
+  text-align: center;
+  font-family: Arial;
+  padding: 8px 10px 10px 10px;
+  border-top: 2px solid #ccc;
+  /* border-bottom: 2px solid #ddd; */
+}
+.heading li{
+  background: #eeefff;
+}
+.btns{
+  clear: left;
+  float: right;
+  margin-right: 35px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+button{
+  margin-left: 10px;
+}
+.blue{
+  background: #0088e8;
+  padding: 7px;
+  border: unset;
+  border-radius: 5px;
+}
+.red{
+  background: tomato;
+  padding: 7px;
+  border: unset;
+  border-radius: 5px;
+}
+.noreserves{
+  padding: 29px;
+  padding-top: 50px;
+  font-family: Arial;
+}
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  line-height: 1.8;
+  background: rgba(0, 0, 0, 0.5);
+}
+.modal-content{
+  border-radius: 5px;
+  background: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 0px 3px 5px 1px;
+  animation-name: modalopen;
+  animation-duration: 0.5s;
+}
+@keyframes modalopen {
+  from {margin-top: -10%;}
+  to {margin-top: 10%}
+}
+.modal-header,
+.modal-body{
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-content h3{
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 1%;
+}
+.modal-content p{
+  font-family: sans-serif;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+.modal-content .modal-footer{
+  text-align: right;
+  margin-top: 3%;
+}
+.modal-content button{
+  color: #fff;
+  padding: 7px 15px;
+  border: 0;
+  border-radius: 3px;
+}
+.modal-content #yesbtn{
+  padding: 7px 30px;
+  background-color: #0000ff;
+}
+.modal-content #nobtn{
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #ff0000;
+}
+.messagecontent{
+  padding: 20px 0 0 20px;
+}
+.messagecontent p{
+  font-family: sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.messageform label{
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.messageform input{
+  margin-bottom: 25px;
+}
+.messageform label, .messageform input{
+  display: block;
+  font-family: Arial;
+  margin-top: 5px;
+}
+.messageform input{
+  box-sizing: border-box;
+}
+.messageform input[type="text"], .messageform input[type="email"]{
+  width: 90%;
+  height:30px;
+  outline-color: steelblue;
+}
+.messageform input[type="submit"]{
+  margin-top: 20px;
+  float: right;
+  padding: 8px 10px;
+  margin-right: 70px;
+  border-radius: 5px;
+  background: slateblue;
+  border: 0px;
+  color: whitesmoke;
+}

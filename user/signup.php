@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blue Bird | Account</title>
+    <!-- <link rel="stylesheet" href="../css/master.css"> -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style1.css">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/main.js"></script>
+
+
+  </head>
+  <body class="body1" style="text-align: center;">
+    <div class="bigy" >
+      <nav id="top_menu">
+        <img src="../images/selection.png">
+        <ul>
+          <li> <a href="index.html">HOME</a></li>
+          <li> <a href="index.html">ABOUT</a></li>
+          <li> <a href="index.html">CONTACT US</a> </li>
+          <li> <a href="#">GALLERY <img src="../images/dropdown.png" ></a>
+            <div class="dropdown_content">
+              <a href="index.html">Hotel</a>
+              <a href="index.html">Bed Rooms</a>
+            </div>
+          </li>
+          <li> <a href="#">ACCOUNT <img src="../images/dropdown.png" ></a>
+            <div class="dropdown_content">
+              <a href="#">Sign In</a>
+              <a href="#">Register</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+          </div>
+      <div class="form">
+
+                <ul class="tab-group">
+                  <li class="tab active" id="loginbtn"><a >Log In</a></li>
+                  <li class="tab" id="signupbtn"><a >Sign Up</a></li>
+                </ul>
+
+                <div class="tab-content">
+                  <div id="signup">
+                    <h1>Sign Up for Free</h1>
+
+                    <form action="insert.php" method="post">
+
+                    <div class="top-row">
+                      <div class="field-wrap">
+                        <label>
+                          First Name<span class="req">*</span>
+                        </label>
+                        <input type="text" class="names" name="fname" required autocomplete="off" />
+                      </div>
+
+                      <div class="field-wrap">
+                        <label>
+                          Last Name<span class="req">*</span>
+                        </label>
+                        <input type="text" class="names" name="lname" required autocomplete="off"/>
+                      </div>
+                    </div>
+
+                    <div class="field-wrap">
+                      <label>
+                        Email Address<span class="req">*</span>
+                      </label>
+                      <input type="email" name="mail" required autocomplete="off"/>
+                    </div>
+
+                    <div class="field-wrap">
+                      <label>
+                        Set A Password<span class="req">*</span>
+                      </label>
+                      <input type="password" name="password" required autocomplete="off"/>
+                    </div>
+
+                    <button type="submit" class="button button-block"/>Get Started</button>
+
+                    </form>
+                  </div>
+
+                  <div id="login">
+                    <h1>Welcome Back!</h1>
+
+                    <form action="booking.php" method="post">
+
+                      <div class="field-wrap">
+                      <label>
+                        Email Address<span class="req">*</span>
+                      </label>
+                      <input type="email" name="mail" required autocomplete="off"/>
+                    </div>
+
+                    <div class="field-wrap">
+                      <label>
+                        Password<span class="req">*</span>
+                      </label>
+                      <input type="password" name="password" required autocomplete="off"/>
+                    </div>
+
+                    <p class="forgot"><a href="#">Forgot Password?</a></p>
+
+                    <button class="button button-block"/>Log In</button>
+
+                    </form>
+
+                  </div>
+                  <?php
+                  if(isset($_GET['response'])==true){
+                    echo'<p style="color:black;margin-top:10px;font-family:Arial;font-size:16px;font-weight:bold;">Account has been created. Sign In now!</p>';
+                  }
+                  if(isset($_GET['message'])==true){
+                    echo'<p style="color:red;margin-top:10px;font-family:Arial;font-size:16px;font-weight:bold;">Email and Password dont match.</p>';
+                  }
+                  if(isset($_GET['warning'])==true){
+                    echo'<p style="color:tomato;font-family:Arial;font-size:16px;font-weight:bold;margin-top:10px;">Account with that email exists.</p>';
+                  }
+                   ?>
+                </div><!-- tab-content -->
+
+          </div> <!-- /form -->
+
+  </body>
+</html>

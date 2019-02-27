@@ -1,0 +1,401 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.body1{
+  background-size: cover;
+  background-image:url(../images/photo3.jpg);
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+
+/* GLOBALLY */
+.big_wrapper{
+  background: #bfbfbf;
+}
+
+/* NAVIGATION BAR */
+nav#top_menu{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: rgba(0,0,0,1);
+  padding-bottom: 3px;
+}
+
+nav#top_menu img{
+  height:40px;
+  width:90px;
+  float: left;
+  margin-left: 1%;
+  margin-top: 0.2%;
+}
+
+nav#top_menu ul{
+  float: right;
+}
+
+nav#top_menu ul li{
+  list-style: none;
+  float: left;
+}
+
+nav#top_menu ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  cursor: pointer;
+  display: block;
+  padding: 15px 25px;
+}
+
+.dropdown_content{
+  display: none;
+  position: fixed;
+  background-color: black;
+  color: #eee;
+  border-top: 0.1px solid #eee;
+  max-width: 260px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+nav#top_menu li:hover .dropdown_content{
+  display: block;
+}
+
+nav#top_menu li a:hover{
+  background: #00ac95;
+}
+
+nav#top_menu ul .dropdown_content{
+  display: none;
+}
+
+nav#top_menu ul li a img{
+  width: 10px;
+  height: 11px;
+  float: right;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+/* MAIN SECTION COVER */
+#main_section .cover img{
+  width: 100%;
+  height: 520px;
+}
+
+/* MAIN SECTION WELCOME */
+#main_section .welcome{
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  font-family: ubuntu, sans-serif;
+}
+
+#main_section .welcome .container{
+  font-size: -webkit-xxx-large;
+  font-size: 40px;
+}
+
+#main_section .welcome p{
+  margin-top: 10px;
+  font-size: xx-large;
+}
+
+/* MAIN SECTION BOX */
+#main_section .box{
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  height: 330px;
+  padding: 10px 0;
+}
+
+#main_section .box .reservation{
+  width: 21%;
+  min-height: 330px;
+  overflow: hidden;
+  background: #fff;
+  padding: 3px;
+  margin-right: 3%;
+  float: left;
+  text-align: center;
+  /* border: 2px solid black; */
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.reservation:hover{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+#main_section .box #first{
+  margin-left: 3%;
+}
+
+#main_section .box .reservation img{
+  /* width: 270px; */
+  width: 97%;
+  height: 168px;
+  margin-top: 1%;
+  border-radius: 3px;
+}
+
+#main_section .box .reservation a button{
+  padding: 7px 15px;
+  border-radius: 3px;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  border: 0;
+  background: #ddd;
+}
+
+#main_section .box .reservation a button:hover{
+  background: #00ac95;
+}
+
+#main_section .box .reservation p{
+  font-family: sans-serif;
+  margin-top: 1%;
+  margin-bottom: 4%;
+  font-size: 13px;
+}
+
+/* MAIN SECTION RATINGS */
+#main_section .ratings{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#main_section .ratings h1{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 35px;
+  font-weight: 400;
+  font-family: ubuntu, sans-serif;
+}
+
+#main_section .ratings .profile{
+  text-align: center;
+  padding-top: 2%;
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+#main_section .ratings .profilepic{
+  width: 70px;
+  /* height: 110px; */
+  margin-bottom: 10px;
+}
+
+#main_section .ratings .profile p{
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+#main_section .ratings .profile h2{
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+#main_section .ratings .profile::after{
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+#main_section .ratings .ratings-footer{
+  text-align: center;
+}
+
+#main_section .ratings .ratings-footer img{
+  margin-top: 80px;
+  margin-bottom: 50px;
+  width: 30px;
+}
+
+/* MAIN SECTION EXPLORE */
+#main_section .explore h1{
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+#main_section .explore .explore-content{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#main_section .explore .explore-content::after{
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+
+#main_section .explore .explore-content p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Open Sans, ubuntu, sans-serif;
+  font-size: 24px;
+}
+
+#main_section .explore .explore-content p.pool{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#main_section .explore .explore-content p.tools{
+  margin-bottom: 20px;
+}
+
+.explore-content .photos{
+  /* padding-left: 1%;
+  padding-right: 1%; */
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.explore-content .photos .pic{
+  float: left;
+  width: 20%;
+  background: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  margin-left: 4%;
+  box-sizing: border-box;
+  /* margin-left: 5px;
+  margin-right: 5px; */
+}
+
+.explore-content .photos .pic img{
+  width: 100%;
+  height: 200px;
+}
+
+  /* MAIN SECTION ABOUT US */
+#main_section .about-us{
+  text-align: center;
+}
+
+#main_section .about-us img.user{
+  margin-top: 80px;
+  margin-bottom: 50px;
+  width: 30px;
+}
+
+#main_section .about-us p#abouttext{
+  font-family: Open Sans, sans-serif;
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#main_section .about-us img.about{
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+#main_section .about-us p{
+  width: 70%;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.8;
+  font-family: Arial;
+}
+
+/* MAIN SECTION CONTACT */
+#main_section .contact{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#main_section .contact::after{
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+#main_section .contact img{
+  margin-top: 80px;
+  margin-bottom: 50px;
+  width: 30px;
+}
+
+#main_section .contact p#contact-id{
+  font: 30px Open Sans, sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#main_section .contact p.sms{
+  font: 21px Open Sans, sans-serif;
+  margin-bottom: 20px;
+}
+
+#main_section .contact .details{
+  width:60%;
+  margin: auto;
+  padding-top: 15px;
+}
+
+#main_section .contact .message{
+  /* border: 1px solid black; */
+  width: 60%;
+  float: left;
+}
+
+#main_section .contact .address{
+  /* border: 1px solid black; */
+  float: left;
+  width: 40%;
+  margin-bottom: 50px;
+}
+
+.message #myform input{
+  margin-bottom: 5px;
+  border-radius: 2px;
+  border: 0;
+  padding: 5px;
+}
+
+.message #myform button{
+  padding: 7px 10px;
+  margin-top: 5px;
+  border-radius: 2px;
+  border: 0;
+}
+
+.message #myform button:hover{
+  background: #00ac95;
+}
+
+.address{
+  text-align: left;
+}
+
+.address .row_address span{
+  color: #ff2a00;
+}
+
+#the_footer{
+  color: #fff;
+  font-family: Open Sans, ubuntu, sans-serif;
+  font-size: 12px;
+  clear: both;
+  background-color: #232323;
+  text-align: center;
+  padding: 15px;
+  height: inherit;
+}
