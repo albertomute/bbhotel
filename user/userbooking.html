@@ -13,9 +13,10 @@
       <div class="firstHeader">
         <a href="#">Log Out</a>
         <p id="userdetails"> Welcome
-          <?php
+<!--           <?php
             echo $_SESSION['email'];
-          ?>  </p>
+          ?>   -->
+        </p>
       </div>
       <div class="secondHeader">
         <span id="userIcon" style="float:left;font-size: medium; color: #26567e;">
@@ -64,7 +65,9 @@
               <input type="text" name="lname" required autocomplete="off"><br> -->
             <label for="email">Email</label><br>
               <input type="email" name="email" required readonly autocomplete="off"
-                        value="<?php echo $_SESSION['email']; ?>"><br>
+                        placeholder="Enter Your Email"><br>
+<!--             <input type="email" name="email" required readonly autocomplete="off"
+                        value="<?php echo $_SESSION['email']; ?>"><br> -->
             <label for="phone">Phone Number</label><br>
               <input type="tel" name="phone" required autocomplete="off"><br>
               <label for="roomtype">Room type</label>
@@ -85,14 +88,14 @@
               <input type="date" name="outdate" id="outdate" required>
               <input type="text" id="nodays" name="days" style="display: none;" value="">
               <span>
-                <?php
+<!--                 <?php
                  if(isset($_GET['error'])==true){
                     echo'<p>The limit is two reservations.</p>';
                   } ?>
                 <?php
                  if(isset($_GET['message'])==true){
                     echo'<p style="color:darkgreen;">Reservation has been sent.</p>';
-                  } ?>
+                  } ?> -->
                   <input type="submit" name="" value="submit">
               </span>
           </fieldset>
